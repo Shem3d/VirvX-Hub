@@ -362,6 +362,18 @@ loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
       		print("Clicked")
   	end    
 })
+-- Section
+local Section = Tab:AddSection({
+	Name = "Universal Free Gamepass"
+})
+-- Button
+Tab:AddButton({
+	Name = "Universal Free Gamepass",
+      Callback = function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/dark-modz/6982de484735e730494b2d5a10fd6a2a/raw/a92563b0cd6a63683341a09f54baccea5349ed69/feGamepassV2",true))()
+      		print("Clicked")
+  	end    
+})
 -- Tab
 local Tab = Window:MakeTab({
 	Name = "Settings",
