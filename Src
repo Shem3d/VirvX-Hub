@@ -193,14 +193,6 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "Telekinesis Tool",
-      Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/Nc1h8ia0",true))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
 	Name = "TP Tool",
       Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/mytcXKDR",true))()
