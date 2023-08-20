@@ -161,23 +161,25 @@ local function checkIfSitting()
     return false
 end
 
+local function updateNoclip()
+    if isNoclipEnabled and not checkIfSitting() then
+        enableNoclip()
+    else
+        disableNoclip()
+    end
+end
+
 local noclipToggle = Tab:AddToggle({
     Name = "NoClip",
     Default = false,
     Callback = function(Value)
         isNoclipEnabled = Value
-        if Value then
-            enableNoclip()
-        else
-            disableNoclip()
-        end
+        updateNoclip()
     end
 })
 
 game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function(character)
-    if isNoclipEnabled and not checkIfSitting() then
-        enableNoclip()
-    end
+    updateNoclip()
 end)
 
 game:GetService("Players").LocalPlayer.CharacterRemoving:Connect(function()
@@ -185,12 +187,17 @@ game:GetService("Players").LocalPlayer.CharacterRemoving:Connect(function()
 end)
 
 game:GetService("RunService").Stepped:Connect(function(_, isSimulation)
-    if isSimulation or not isNoclipEnabled or checkIfSitting() then
+    if isSimulation then
         return
     end
     
-    enableNoclip()
+    updateNoclip()
 end)
+
+while true do
+    wait(1)
+    updateNoclip()
+end
 -- Tab
 local Tab = Window:MakeTab({
 	Name = "Games",
