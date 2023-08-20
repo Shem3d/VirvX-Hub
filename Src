@@ -249,6 +249,17 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/fifidk/main/kk
 })
 -- Button
 Tab:AddButton({
+	Name = "Chat Bypass",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/synnyyy/synergy/additional/betterbypasser", true))({
+    Method = 3,
+    Keybind = "F",
+    ShowMethodDictionary = true
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
 	Name = "Chat Spy",
       Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/chatspy/main/spy"))()
