@@ -128,37 +128,57 @@ end)
 -- Toggle
 local isNoclipEnabled = false
 
+local function enableNoclip()
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        for _, part in ipairs(character:GetDescendants()) do
+            if part:IsA("BasePart") then
+                part.CanCollide = false
+            end
+        end
+    end
+end
+
+local function disableNoclip()
+    local character = game.Players.LocalPlayer.Character
+    if character then
+        for _, part in ipairs(character:GetDescendants()) do
+            if part:IsA("BasePart") then
+                part.CanCollide = true
+            end
+        end
+    end
+end
+
 local noclipToggle = Tab:AddToggle({
     Name = "NoClip",
     Default = false,
     Callback = function(Value)
         isNoclipEnabled = Value
-        local character = game.Players.LocalPlayer.Character
-        if character then
-            for _, part in ipairs(character:GetDescendants()) do
-                if part:IsA("BasePart") then
-                    part.CanCollide = not Value
-                end
-            end
+        if Value then
+            enableNoclip()
+        else
+            disableNoclip()
         end
     end
 })
+
+game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function(character)
+    if isNoclipEnabled then
+        enableNoclip()
+    end
+end)
+
+game:GetService("Players").LocalPlayer.CharacterRemoving:Connect(function()
+    disableNoclip()
+end)
 
 game:GetService("RunService").Stepped:Connect(function(_, isSimulation)
     if isSimulation or not isNoclipEnabled then
         return
     end
     
-    local character = game.Players.LocalPlayer.Character
-    if not character then
-        return
-    end
-    
-    for _, part in ipairs(character:GetDescendants()) do
-        if part:IsA("BasePart") then
-            part.CanCollide = false
-        end
-    end
+    enableNoclip()
 end)
 -- Tab
 local Tab = Window:MakeTab({
