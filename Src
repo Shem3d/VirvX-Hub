@@ -165,6 +165,28 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/So
 })
 -- Tab
 local Tab = Window:MakeTab({
+	Name = "Hub",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+-- Button
+Tab:AddButton({
+	Name = "666 Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/dark-modz/b674f4161fe326d5af48a8d79137d940/raw/465a44b57f95a9832f97ef1a5280e5888f571c9b/666hub.txt",true))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Frozen Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FrozenScripts/frozenhubb/main/frozenhub1", true))()
+      		print("Clicked")
+  	end    
+})
+-- Tab
+local Tab = Window:MakeTab({
 	Name = "Games",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
