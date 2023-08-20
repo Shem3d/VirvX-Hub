@@ -125,79 +125,44 @@ game:GetService("UserInputService").JumpRequest:Connect(function()
         game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid"):ChangeState("Jumping")
     end
 end)
--- Toggle
-local isNoclipEnabled = false
-
-local function enableNoclip()
-    local character = game.Players.LocalPlayer.Character
-    if character then
-        for _, part in ipairs(character:GetDescendants()) do
-            if part:IsA("BasePart") then
-                part.CanCollide = false
-            end
-        end
-    end
-end
-
-local function disableNoclip()
-    local character = game.Players.LocalPlayer.Character
-    if character then
-        for _, part in ipairs(character:GetDescendants()) do
-            if part:IsA("BasePart") then
-                part.CanCollide = true
-            end
-        end
-    end
-end
-
-local function checkIfSitting()
-    local character = game.Players.LocalPlayer.Character
-    if character then
-        local humanoid = character:FindFirstChildOfClass("Humanoid")
-        if humanoid and humanoid.Sit then
-            return true
-        end
-    end
-    return false
-end
-
-local function updateNoclip()
-    if isNoclipEnabled and not checkIfSitting() then
-        enableNoclip()
-    else
-        disableNoclip()
-    end
-end
-
-local noclipToggle = Tab:AddToggle({
-    Name = "NoClip",
-    Default = false,
-    Callback = function(Value)
-        isNoclipEnabled = Value
-        updateNoclip()
-    end
+-- Tab
+local Tab = Window:MakeTab({
+	Name = "Admin",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
 })
-
-game:GetService("Players").LocalPlayer.CharacterAdded:Connect(function(character)
-    updateNoclip()
-end)
-
-game:GetService("Players").LocalPlayer.CharacterRemoving:Connect(function()
-    disableNoclip()
-end)
-
-game:GetService("RunService").Stepped:Connect(function(_, isSimulation)
-    if isSimulation then
-        return
-    end
-    
-    updateNoclip()
-end)
-
-while true do
-    wait(1)
-    updateNoclip()
-end
+-- Button
+Tab:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/infinite-invis/main/remade"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Nameless Admin",
+	Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FilteringEnabled/NamelessAdmin/main/Source"))();
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Fates Admin",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "CMD X",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source",true))()
+      		print("Clicked")
+  	end    
+})
 -- Tab
 local Tab = Window:MakeTab({
 	Name = "Games",
