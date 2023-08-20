@@ -105,6 +105,20 @@ local resetFOVButton = Tab:AddButton({
 game.Workspace.CurrentCamera.FieldOfView = 70
     end
 })
+-- Section
+local Section = Tab:AddSection({
+	Name = "Others"
+})
+-- Toggle
+local isJumpingEnabled = false
+
+local infiniteJumpToggle = Tab:AddToggle({
+    Name = "Infinite Jump",
+    Default = false,
+    Callback = function(Value)
+        isJumpingEnabled = Value
+    end
+})
 -- Tab
 local Tab = Window:MakeTab({
 	Name = "Games",
@@ -318,4 +332,3 @@ OrionLib:Destroy()
       		print("Clicked")
   	end    
 })
-OrionLib:Init()
