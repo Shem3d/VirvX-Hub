@@ -339,6 +339,15 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/FrozenScripts/frozenh
       		print("Clicked")
   	end    
 })
+-- Button
+Tab:AddButton({
+	Name = "Pendulum Hub",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/FrozenScripts/frozenhubb/main/frozenhub1", true))()
+      		print("Clicked")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
+  	end    
+})
 -- Tab
 local Tab = Window:MakeTab({
 	Name = "Games",
