@@ -127,6 +127,152 @@ game:GetService("UserInputService").JumpRequest:Connect(function()
 end)
 -- Tab
 local Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Shaders"
+})
+-- Button
+Tab:AddButton({
+	Name = "Shaders",
+      Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Shiftlock"
+})
+-- Button
+Tab:AddButton({
+	Name = "Shiftlock",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/30xmkzz/main/ok"))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Fly"
+})
+-- Button
+Tab:AddButton({
+	Name = "Fly Mobile",
+      Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Shem3d/fly/main/kk'))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Fly Car Mobile",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Keybind"
+})
+-- Button
+Tab:AddButton({
+	Name = "Keybind",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/zLvXjuD2"))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Tools"
+})
+-- Button
+Tab:AddButton({
+	Name = "Telekinesis Tool",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/M6MQyCCh"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "TP Tool",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/mytcXKDR",true))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Btools",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/FBKJTUyw",true))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "F3X",
+      Callback = function()
+loadstring(game:GetObjects("rbxassetid://6695644299")[1].Source)()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Tools Giver",
+      Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/VYIAk3o1/raw'),true))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Universal Free Gamepass"
+})
+-- Button
+Tab:AddButton({
+	Name = "Universal Free Gamepass",
+      Callback = function()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/dark-modz/6982de484735e730494b2d5a10fd6a2a/raw/a92563b0cd6a63683341a09f54baccea5349ed69/feGamepassV2",true))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Chat"
+})
+-- Button
+Tab:AddButton({
+	Name = "Anti Chat Logger",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/fifidk/main/kkk"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Chat Spy",
+      Callback = function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/chatspy/main/spy"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Chat Hax",
+      Callback = function()
+loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
+      		print("Clicked")
+  	end    
+})
+-- Tab
+local Tab = Window:MakeTab({
 	Name = "Admin",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
@@ -152,6 +298,14 @@ Tab:AddButton({
 	Name = "Fates Admin",
       Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))();
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Reviz Admin",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/Caniwq2N",true))()
       		print("Clicked")
   	end    
 })
@@ -271,128 +425,6 @@ Tab:AddButton({
 	Name = "Speed Tool",
       Callback = function()
 loadstring(game:HttpGetAsync("https://pastebin.com/raw/XiqsUXHj", true))()
-      		print("Clicked")
-  	end    
-})
--- Tab
-local Tab = Window:MakeTab({
-	Name = "Utility",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
-})
--- Section
-local Section = Tab:AddSection({
-	Name = "Shaders"
-})
--- Button
-Tab:AddButton({
-	Name = "Shaders",
-      Callback = function()
-loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
-      		print("Clicked")
-  	end    
-})
--- Section
-local Section = Tab:AddSection({
-	Name = "Shiftlock"
-})
--- Button
-Tab:AddButton({
-	Name = "Shiftlock",
-      Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/30xmkzz/main/ok"))()
-      		print("Clicked")
-  	end    
-})
--- Section
-local Section = Tab:AddSection({
-	Name = "Keybind"
-})
--- Button
-Tab:AddButton({
-	Name = "Keybind",
-      Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/zLvXjuD2"))()
-      		print("Clicked")
-  	end    
-})
--- Section
-local Section = Tab:AddSection({
-	Name = "Fly"
-})
--- Button
-Tab:AddButton({
-	Name = "Fly Mobile",
-      Callback = function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/Shem3d/fly/main/kk'))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Fly Car Mobile",
-      Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
-      		print("Clicked")
-  	end    
-})
--- Section
-local Section = Tab:AddSection({
-	Name = "Gravity Tools"
-})
--- Button
-Tab:AddButton({
-	Name = "Gravity Tool V1",
-      Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/M6MQyCCh"))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Gravity Tool V2",
-      Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/Nc1h8ia0"))()
-      		print("Clicked")
-  	end    
-})
--- Section
-local Section = Tab:AddSection({
-	Name = "Chat"
-})
--- Button
-Tab:AddButton({
-	Name = "Anti Chat Logger",
-      Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/fifidk/main/kkk"))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Chat Spy",
-      Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/chatspy/main/spy"))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Chat Hax",
-      Callback = function()
-loadstring(game:HttpGet('https://pastebin.com/raw/MBpnp3yS'))()
-      		print("Clicked")
-  	end    
-})
--- Section
-local Section = Tab:AddSection({
-	Name = "Universal Free Gamepass"
-})
--- Button
-Tab:AddButton({
-	Name = "Universal Free Gamepass",
-      Callback = function()
-loadstring(game:HttpGet("https://gist.githubusercontent.com/dark-modz/6982de484735e730494b2d5a10fd6a2a/raw/a92563b0cd6a63683341a09f54baccea5349ed69/feGamepassV2",true))()
       		print("Clicked")
   	end    
 })
