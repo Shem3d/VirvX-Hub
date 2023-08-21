@@ -183,7 +183,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Keybind",
       Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/zLvXjuD2"))()
+loadstring(game:HttpGet("https://pastebin.com/raw/VyeAZUVM", true))
       		print("Clicked")
   	end    
 })
