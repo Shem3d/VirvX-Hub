@@ -52,7 +52,7 @@ local Section = Tab:AddSection({
 Tab:AddButton({
 	Name = "Keybind (M)",
       Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/VyeAZUVM", true))
+loadstring(game:HttpGet("https://pastebin.com/raw/VyeAZUVM"))()
       		print("Clicked")
   	end    
 })
@@ -162,7 +162,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/infinite-invis/main/remade"))()
       		print("Clicked")
   	end    
 })
