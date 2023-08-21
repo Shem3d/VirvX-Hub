@@ -12,10 +12,10 @@ OrionLib:MakeNotification({
 	Name = "Developper",
 	Content = "Created by MkzZ",
 	Image = "rbxassetid://4483345998",
-	Time = 3
+	Time = 2
 })
 -- Window
-local Window = OrionLib:MakeWindow({Name = "Virvx Hub", IntroText = "VirvX V1", HidePremium = false, CloseCallback = OrionLib:Destroy(), SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Virvx Hub", IntroText = "VirvX Hub by MkzZ", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 -- Tab
 local Tab = Window:MakeTab({
 	Name = "Main",
