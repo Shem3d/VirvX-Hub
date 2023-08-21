@@ -162,7 +162,7 @@ local Tab = Window:MakeTab({
 Tab:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/infinite-invis/main/remade"))()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
       		print("Clicked")
   	end    
 })
