@@ -64,6 +64,14 @@ loadstring(game:HttpGet("https://pastebin.com/raw/MWL1WvP7"))()
       		print("Clicked")
   	end    
 })
+-- Button
+Tab:AddButton({
+	Name = "Keybind (F)",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/t75dD6L7"))()
+      		print("Clicked")
+  	end    
+})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Tools"
