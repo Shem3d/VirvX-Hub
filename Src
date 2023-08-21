@@ -266,14 +266,6 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/75128ac7f49f9c
       		print("Clicked")
   	end    
 })
--- Button
-Tab:AddButton({
-	Name = "Chams",
-      Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/ezmGqh6i", true))
-      		print("Clicked")
-  	end    
-})
 -- Section
 local Section = Tab:AddSection({
 	Name = "Brookhaven"
