@@ -1,19 +1,5 @@
 -- Lib
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/thanhdat4461/OrionMoblie/main/source')))()
--- Notification
-OrionLib:MakeNotification({
-	Name = "VirvX Hub",
-	Content = "VirvX Hub Launched",
-	Image = "rbxassetid://4483345998",
-	Time = 3
-})
--- Notification
-OrionLib:MakeNotification({
-	Name = "Developper",
-	Content = "Created by MkzZ",
-	Image = "rbxassetid://4483345998",
-	Time = 2
-})
 -- Window
 local Window = OrionLib:MakeWindow({Name = "Virvx Hub", IntroText = "VirvX Hub by MkzZ", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
 -- Tab
@@ -55,14 +41,6 @@ Tab:AddButton({
 	Name = "Fly Mobile",
       Callback = function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/Shem3d/fly/main/kk'))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Fly Car Mobile",
-      Callback = function()
-loadstring(game:HttpGet("https://pastebin.com/raw/MHE1cbWF"))()
       		print("Clicked")
   	end    
 })
@@ -239,14 +217,6 @@ Tab:AddButton({
 	Name = "Frozen Hub",
       Callback = function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/FrozenScripts/frozenhubb/main/frozenhub1", true))()
-      		print("Clicked")
-  	end    
-})
--- Button
-Tab:AddButton({
-	Name = "Pendulum Hub",
-      Callback = function()
-loadstring(game:HttpGet("https://raw.githubusercontent.com/Tescalus/Pendulum-Hubs-Source/main/Pendulum%20Hub%20V5.lua"))()
       		print("Clicked")
   	end    
 })
