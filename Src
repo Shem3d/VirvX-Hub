@@ -50,7 +50,7 @@ local Section = Tab:AddSection({
 })
 -- Button
 Tab:AddButton({
-	Name = "Keybind (M)",
+	Name = "Keybind (Invisible) [M]",
       Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/VyeAZUVM"))()
       		print("Clicked")
@@ -58,7 +58,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/VyeAZUVM"))()
 })
 -- Button
 Tab:AddButton({
-	Name = "Keybind (V)",
+	Name = "Keybind (Vfly) [V]",
       Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/MWL1WvP7"))()
       		print("Clicked")
@@ -66,7 +66,15 @@ loadstring(game:HttpGet("https://pastebin.com/raw/MWL1WvP7"))()
 })
 -- Button
 Tab:AddButton({
-	Name = "Keybind (F)",
+	Name = "Keybind [X]",
+      Callback = function()
+loadstring(game:HttpGet("https://pastebin.com/raw/3UK2PPvr"))()
+      		print("Clicked")
+  	end    
+})
+-- Button
+Tab:AddButton({
+	Name = "Keybind (Fly) [F]",
       Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/t75dD6L7"))()
       		print("Clicked")
