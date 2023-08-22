@@ -58,7 +58,7 @@ loadstring(game:HttpGet("https://pastebin.com/raw/VyeAZUVM"))()
 })
 -- Button
 Tab:AddButton({
-	Name = "Keybind (K)",
+	Name = "Keybind (V)",
       Callback = function()
 loadstring(game:HttpGet("https://pastebin.com/raw/MWL1WvP7"))()
       		print("Clicked")
