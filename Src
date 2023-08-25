@@ -10,18 +10,6 @@ local Tab = Window:MakeTab({
 })
 -- Section
 local Section = Tab:AddSection({
-	Name = "Shaders"
-})
--- Button
-Tab:AddButton({
-	Name = "Shaders",
-      Callback = function()
-loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
-      		print("Clicked")
-  	end    
-})
--- Section
-local Section = Tab:AddSection({
 	Name = "Shiftlock"
 })
 -- Button
@@ -160,6 +148,18 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/Shem3d/chatspy/main/s
       		print("Clicked")
   	end    
 })
+-- Section
+local Section = Tab:AddSection({
+	Name = "Shaders"
+})
+-- Button
+Tab:AddButton({
+	Name = "Shaders",
+      Callback = function()
+loadstring(game:HttpGet(('https://pastefy.app/xXkUxA0P/raw'),true))()
+      		print("Clicked")
+  	end    
+})
 -- Button
 Tab:AddButton({
 	Name = "Chat Hax",
@@ -269,8 +269,18 @@ loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3571b775989b50
 Tab:AddButton({
 	Name = "Highlight Hub Premium",
       Callback = function()
-script_key="GVgQdroWaMiRssPunFXxOYFewHupEigB";
-loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/75128ac7f49f9c3017533547d8e13046.lua"))()
+      		print("Clicked")
+  	end    
+})
+-- Section
+local Section = Tab:AddSection({
+	Name = "Evade"
+})
+-- Button
+Tab:AddButton({
+	Name = "BINCOOD",
+      Callback = function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/Infinity2346/Tect-Menu/main/Evade.txt'))()
       		print("Clicked")
   	end    
 })
